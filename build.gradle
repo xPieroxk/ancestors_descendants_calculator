@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'antlr'
+    id 'application'
+}
+
+group 'it.unicam.cs.lc2122.gedcom'
+version '1.0.0'
+java.sourceCompatibility JavaVersion.VERSION_11
+java.targetCompatibility JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+
+application {
+    mainClass = 'it.unicam.cs.lc2122.gedcom.Main'
+}
+
+dependencies {
+    antlr "org.antlr:antlr4:4.10.1"
+}
+
